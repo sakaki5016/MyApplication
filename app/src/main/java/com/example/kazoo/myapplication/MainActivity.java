@@ -19,6 +19,7 @@ public class MainActivity extends ActionBarActivity {
 
             @Override
             public void onClick(View view) {
+                // コメントを追加してみる
                 Intent intent = new Intent(MainActivity.this, SecondActivity.class);
                 EditText editText = (EditText) findViewById(R.id.editText);
                 intent.putExtra("inputText", editText.getText().toString());
